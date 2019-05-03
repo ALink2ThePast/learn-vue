@@ -1,5 +1,15 @@
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 
-<div id="app"></div>
+<div id="app">
+  <p>{{ text }}</p>
+
+  <p>
+    <a v-bind:href="linkTo" target="_blank">DuckDuckGo</a>
+  </p>
+
+  <p>
+    <a :href="linkTo" target="_blank">DuckDuckGo</a>
+  </p>
+</div>
 
 <script src="app.js"></script>
