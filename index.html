@@ -4,12 +4,16 @@
   <p>{{ text }}</p>
 
   <p>
-    <a v-bind:href="linkTo" target="_blank">DuckDuckGo</a>
-  </p>
-
-  <p>
     <a :href="linkTo" target="_blank">DuckDuckGo</a>
   </p>
+
+  <p>My name is {{ name }} and I am {{ age }} years old.</p>
+
+  <p>In 5 years I will be {{ addToAge(5) }}.</p>
+
+  <button v-on:click="increaseAge">Age Me</button>
+
+  <button @click="age++">Age Me</button>
 </div>
 
 <script src="app.js"></script>
